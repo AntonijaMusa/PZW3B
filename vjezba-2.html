@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS vježba</title>
+</head>
+<body>
+
+    <h1>Javascript vježba</h1>
+
+    <button id="button_A">KLIKNI ME ZA PLUS!</button>
+    <h3 id="heading_A"></h3>
+
+  <script>
+const buttonA = document.querySelector("#button_A");
+const headingA = document.querySelector("#heading_A");
+
+let count = 1;
+
+buttonA.onclick = () => {
+    headingA.textContent = `Broj klikova: ${count} `;
+ count += 1;
+};
+
+</script>
+
+
+
+<button id="button_B">KLIKNI ME ZA MINUS!</button>
+    <h3 id="heading_B"></h3>
+
+    <script>
+        const buttonB = document.querySelector("#button_B");
+        const headingB = document.querySelector("#heading_B");
+        
+        let count = 0;
+        
+        buttonB.onclick = () => {
+            headingB.textContent = `Broj smanjenih klikova: ${count} `;
+         count -= 1;
+        };
+
+  </script>  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
